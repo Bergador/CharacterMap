@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: Character Map
+## Author: Original by Mirrored, vanilla backport by Bergador
+## Version: 1.0
+## Notes: Provides a virtual keyboard of higher-ASCII and Unicode characters which can be inserted into chat boxes.
+## SavedVariables: CharacterMapSaved
+CharacterMap.xml
+CharacterMap.lua
