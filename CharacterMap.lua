@@ -295,28 +295,8 @@ function CharacterMapFrame_OnLoad(self)
 end
 
 function CharacterMapFrame_OnUpdate(self)
-  local modifier = 1;
-  if(IsControlKeyDown()) then
-    if(IsShiftKeyDown()) then
-      if(IsAltKeyDown()) then
-        modifier = 7
-      else
-        modifier = 4;
-      end
-    else
-      modifier = 3;
-    end
-  elseif(IsAltKeyDown()) then
-    if(IsShiftKeyDown()) then
-      modifier = 6;
-    else
-      modifier = 5;
-    end
-  elseif(IsShiftKeyDown()) then
-    modifier = 2;
-  else
-    modifier = 1;
-  end
+  local modifier = 7;
+
   if(self.sub_frame ~= modifier) then
     self.sub_frame = modifier;
     for i,v in ipairs(self.sub_frames) do
